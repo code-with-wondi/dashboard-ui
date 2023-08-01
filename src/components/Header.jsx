@@ -1,6 +1,11 @@
 import React from "react";
-import { BiCalendarEvent } from "react-icons/bi";
+import { BiCalendarEvent,BiUserCircle } from "react-icons/bi";
 import { SlCalender } from "react-icons/sl";
+import {GrNotification} from "react-icons/gr"
+import {HiTranslate} from "react-icons/hi"
+
+import './Header.css';
+
 const Header = () => {
   return (
     <>
@@ -9,14 +14,16 @@ const Header = () => {
           <BiCalendarEvent
             style={{
               size: "50px",
-              height: "100px",
-              width: "100px",
-              padding: "9px",
               background: "#eee",
               color: "#111",
             }}
           />
           <SlCalender />
+        </div>
+        <div className="left">
+          <GrNotification />
+          <HiTranslate />
+          <BiUserCircle />
         </div>
       </div>
     </>
