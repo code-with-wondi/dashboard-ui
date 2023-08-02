@@ -1,58 +1,111 @@
+.wrapper{
+    display: flex;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(224, 217, 217);
 
-.view{
+  
+}
+.one{
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    align-items: center;
+
+}
+.one p{
+    font-size: 15px;
+    opacity: 0.8;
+}
+.icon-de{
+    font-size: 15px;
+    color: #eee;
+}
+
+.underline{
+    height: 50px;
+    width: 100%;
+    background: #FE5F55;
+}
+.icon-wrap{
+    padding: 10px;
+    background-color:  #FE5F55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.amount{
+    border-bottom: 5px solid red;
+    width: 40px;
+    font-size: 32px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ .wholewrapper{
+    display: flex;
+ }
+ .analytics-wrapper{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+ }
+ .title{
+    text-align: center;
+    font-size: 24px;
+ }
+ .usage{
+    padding: 40px 20px;
+    background-color: #0D1282;
+    margin-left: 20px;
+    border-radius: 20px;
+    
+ }
+.icon{
+    font-size: 48px;
+    color: white;
+}
+.inf{
     display: flex;
     align-items: center;
 }
-.navbar{
-    display: flex;
-    
-
+.inf h2{
+    font-size: 32px;
+    color: white;
 }
-.left{
-    margin-left: 600px;
-    display: flex;
-} 
-.icon-nav{
-    padding: 8px;
-    font-size: 25px;
-    border-radius: 50px;
-    margin-left: 10px;
-    color: #4f6367;
-    box-shadow: 3px 3px 3px 3px #eee;
-
-   
-}
-.profile{
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-   
-
-
-}
-
-.info{
-    padding:0;
-}
-.info h4{
-    font-size: 15px;
-    margin: 0 5px;
-    font-weight: 700;
-}
-.info p{
+.inf p{
     font-size: 12px;
-    margin: 0 5px;
+    margin-left: 5px;
+    color: gray;
 }
-.d {
+.usage-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.donought {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;  
+    padding: 40px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 300px;
+
   }
   
   .donut-chart {
     position: relative;
-      width: 200px;
-    height: 200px;
+   
       margin: 0 auto 2rem;
       border-radius: 100%
    }
@@ -62,8 +115,7 @@
     text-align: center;
   font-size: 28px;
     top:0;left:0;bottom:0;right:0;
-    width: 130px;
-    height: 130px;
+    
     margin: auto;
     border-radius: 50%;
     line-height: 35px;
@@ -100,20 +152,12 @@
         }
       
       
-  #part2 {
-      transform: rotate(100deg);
-    }
-  #part2 .circle {
-      background-color: #11A8AB;
-      animation: second 1s 1 forwards 1s;
-    }
+  
+  
   #part3 {
       transform: rotate(250deg);
   }
-      #part3 .circle {
-          background-color: #4FC4F6;
-          animation: third 0.5s 1 forwards 2s;
-      }
+      
       
       
   /* Animation */
@@ -130,25 +174,4 @@
   @keyframes third {
       from {transform: rotate(0deg);}
       to {transform: rotate(111deg);}
-  }
-
-  .key{
-    width: 30px;
-    height: 10px;
-    background-color: #E64C65;
-    margin-right: 10px;
-    
-  }
-  .paid{
-    display: flex;
-   
-    align-items: center;
-  }
-  .unpaid{
-    background-color: #11A8AB;
-  }
-  .legend{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }

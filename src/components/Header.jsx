@@ -7,27 +7,30 @@ import {HiTranslate} from "react-icons/hi"
 import './Header.css';
 
 const Header = () => {
-  return (
+  return ( 
     <>
       <div className="navbar">
         <div className="right">
           <BiCalendarEvent
-            style={{
-              size: "50px",
-              background: "#eee",
-              color: "#111",
-            }}
+            className="icon-nav"
           />
-          <SlCalender />
+          <SlCalender className="icon-nav" />
         </div>
         <div className="left">
-          <GrNotification />
-          <HiTranslate />
-          <BiUserCircle />
+          <GrNotification className="icon-nav" style={{color: "#4f6367"}}/>
+          <HiTranslate className="icon-nav"/>
+          <div className="profile">
+          <BiUserCircle className="icon-nav"/>
+          <div className="info">
+            <h4>Lema Asefa</h4>
+            <p>Adminstrator</p>
+          </div>
+          </div>
+         
         </div>
       </div>
     </>
   );
-};
+}; 
 
 export default Header;
